@@ -5,7 +5,9 @@ DOTFILES_FILES    := $(filter-out $(DOTFILES_EXCLUDES), $(DOTFILES_TARGET))
 
 deploy:
 	@$(foreach val, $(DOTFILES_FILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
-	brew bundle --no-upgrade
 
 init:
 	@$(foreach val, $(wildcard ./etc/init/*.sh), bash $(val);)
+
+brew:
+	brew bundle --no-upgrade
