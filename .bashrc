@@ -34,8 +34,8 @@ alias brew="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew"
 export PIPENV_VENV_IN_PROJECT=true
 
 # nodenv
-# export PATH="$HOME/.nodenv/bin:$PATH"
-# if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+export PATH="$HOME/.nodenv/bin:$PATH"
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # goenv
 export GOENV_ROOT="$HOME/.goenv"
