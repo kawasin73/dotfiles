@@ -51,6 +51,7 @@ export PATH=$PATH:$GOPATH/bin
 #   eval "$(docker-machine env dev)"
 #fi
 
+alias ls="ls -G"
 alias ll="ls -Glha"
 
 # docker-compose alias
