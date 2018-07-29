@@ -2,4 +2,9 @@
     "files.autoSave": "afterDelay",
     "workbench.colorTheme": "Default Light+",
     "editor.renderControlCharacters": true,
+    "explorer.confirmDelete": false,
+    "markdown-pdf.includeDefaultStyles": false,
+    "markdown-pdf.styles": [
+        "~/.vscode/github-markdown.css",
+      ],
 }
