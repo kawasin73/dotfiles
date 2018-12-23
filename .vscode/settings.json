@@ -3,8 +3,14 @@
     "workbench.colorTheme": "Default Light+",
     "editor.renderControlCharacters": true,
     "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "[markdown]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+    },
     "markdown-pdf.includeDefaultStyles": false,
     "markdown-pdf.styles": [
         "~/.vscode/github-markdown.css",
-      ],
+    ],
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
 }
