@@ -14,7 +14,7 @@ source /usr/local/etc/bash_completion.d/pipenv
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/scripts:$PATH
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -29,6 +29,7 @@ if which goenv > /dev/null; then eval "$(goenv init -)"; fi
 export PIPENV_VENV_IN_PROJECT=true
 
 export GOPATH=$HOME
+export PATH=$GOPATH/bin:$PATH
 
 # URL: http://qiita.com/toritori0318/items/e92c7f43223353571274
 # docker-machine
