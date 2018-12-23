@@ -1,11 +1,17 @@
 [user]
 	name = Kawamura Shintaro
 	email = kawasin73@gmail.com
+
 [alias]
 	st = status --ignore-submodules
 	ci = commit
 	br = branch
 	co = checkout
 	openpr = "!f() { hub browse -- `git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1 | cut -f5 -d' ' | sed -e 's%#%pull/%'`; }; f"
+
 [core]
-	excludesFile = /Users/kawasin73/.gitignore_global
+	excludesfile = /Users/kawasin73/.gitignore_global
+
+[ghq]
+    root = ~/src
+

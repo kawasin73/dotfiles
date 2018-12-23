@@ -10,40 +10,25 @@ eval "$(direnv hook bash)"
 
 source /usr/local/etc/bash_completion.d/brew
 source /usr/local/etc/bash_completion.d/pipenv
-source /usr/local/etc/bash_completion.d/pyenv.bash
 # URL: http://qiita.com/koyopro/items/3fce94537df2be6247a3
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
+export PATH=$HOME/bin:$PATH
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# homebrew
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-
-# pyenv
-export PYENV_ROOT="${HOME}/.pyenv"
-export PATH="${PYENV_ROOT}/bin:$PATH"
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-alias brew="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew"
-
-# pipenv
-export PIPENV_VENV_IN_PROJECT=true
-
-# nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # goenv
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 if which goenv > /dev/null; then eval "$(goenv init -)"; fi
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+# pipenv
+export PIPENV_VENV_IN_PROJECT=true
+
+export GOPATH=$HOME
 
 # URL: http://qiita.com/toritori0318/items/e92c7f43223353571274
 # docker-machine
