@@ -20,3 +20,5 @@ brew cask install goland
 brew cask install rubymine
 brew cask install sublime-text
 brew cask install google-chrome
+brew cask install karabiner-elements
+brew cask install dropbox
