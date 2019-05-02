@@ -20,3 +20,6 @@ brew install rbenv
 brew install tree
 brew install wget
 brew install heroku/brew/heroku
+
+# for verilog
+brew install icarus-verilog
