@@ -4,6 +4,7 @@
     "editor.renderControlCharacters": true,
     "explorer.confirmDelete": false,
     "editor.minimap.enabled": false,
+    "editor.rulers": [80],
     "[markdown]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
@@ -13,4 +14,5 @@
         "~/.vscode/github-markdown.css",
     ],
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+    "window.zoomLevel": 0,
 }
