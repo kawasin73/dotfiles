@@ -21,6 +21,7 @@ brew install tree
 brew install wget
 brew install heroku/brew/heroku
 brew install mercurial
+brew install qemu
 
 # for verilog
 brew install icarus-verilog
