@@ -54,3 +54,6 @@ alias be="bundle exec"
 # URL: http://qiita.com/itkrt2y/items/0671d1f48e66f21241e2
 alias g='cd $(ghq root)/$(ghq list | peco)'
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+
+# ssh-agent default
+ssh-add -q ~/.ssh/id_rsa
