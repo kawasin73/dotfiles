@@ -22,6 +22,7 @@ brew cask install sublime-text
 brew cask install google-chrome
 brew cask install karabiner-elements
 brew cask install dropbox
+brew cask install mactex-no-gui
 
 # for verilog
 brew cask install xquartz

@@ -37,6 +37,9 @@ export PATH=$GOPATH/bin:$PATH
 #   eval "$(docker-machine env dev)"
 #fi
 
+# MacTex
+export PATH="/Library/TeX/texbin/:$PATH"
+
 alias ls="ls -G"
 alias ll="ls -Glha"
 
